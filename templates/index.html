@@ -2,11 +2,50 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Flask en Azure</title>
+    <title>Mi Web en Azure</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>¡Hola Mundo desde Flask en Azure! 🚀</h1>
-    <p>Prueba la API en: <a href="/api/hello">/api/hello</a></p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="logo">🚀 FlaskAzure</h2>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/api/data">API</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>¡Bienvenido a Flask en Azure!</h1>
+            <p>Este es un ejemplo con HTML y CSS más completos.</p>
+            <a href="/api/data" class="btn">Probar API</a>
+        </div>
+    </header>
+
+    <!-- Cards -->
+    <section class="cards">
+        <div class="card">
+            <h3>🌐 Azure App Service</h3>
+            <p>Ejecuta aplicaciones web en la nube de manera sencilla.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ CI/CD</h3>
+            <p>Despliega tu código automáticamente desde GitHub.</p>
+        </div>
+        <div class="card">
+            <h3>📦 Flask</h3>
+            <p>Framework ligero en Python para APIs y sitios web.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Proyecto Flask en Azure | Hecho con ❤️</p>
+    </footer>
 </body>
 </html>
